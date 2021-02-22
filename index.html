@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
     <title>SnowLab Stat Dashboard</title>
-    <meta name="application-name" content="netdata">
-
+    <meta name="application-name" content="SnowLab Stats">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
     <meta property="og:url" content="https://monitoring.snowlab.tech/"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="SnowLab Monitoring"/>
     <meta property="og:title" content="SnowLab Stats Dashboard"/>
-    
 </head>
 <script>
 // this section has to appear before loading dashboard.js
@@ -169,11 +166,11 @@ setTimeout(function(){
 
     <div style="width: 100%; height: 23vh; text-align: center; display: inline-block;">
         <div style="width: 100%; height: 15px; text-align: center; display: inline-block;">
-            <b>Netdata statistics on both servers</b>
+            <b>Netdata statistics on Proxy Server</b>
         </div>
         <div style="width: 100%; max-height: calc(100% - 15px); text-align: center; display: inline-block;">
             <div style="width: 49%; height:100%; align: center; display: inline-block;">
-                registry.my-netdata.io
+                  http://192.168.4.93:19999
                 <br/>
                 <div data-netdata="netdata.requests"
                         data-host="http://192.168.4.93:19999"
@@ -224,7 +221,7 @@ setTimeout(function(){
                         ></div>
             </div>
             <div style="width: 49%; height:100%; align: center; display: inline-block;">
-                your netdata server
+                SnowLab Webserver
                 <br/>
                 <div data-netdata="netdata.requests"
                         data-title="Chart Refreshes/s"
