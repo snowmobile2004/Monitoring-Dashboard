@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="background">
+  <head>
+    <!-- OpenGraph tags -->
+    <meta property="og:site_name" content="monitoring.snowlab.tech"/>
+    <meta property="og:title" content="SnowLab.tech Stats"/>
+    <meta property="og:description" content="Resource usage overview."/>
+    <meta property="og:url" content="https://monitoring.snowla.tech"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://landing.snowlab.tech/images/logo.jpg"/>
+
+    <!-- Other meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="Description" content="Resource usage overview." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <link rel="stylesheet" href="/local/css/overview.min.css" />
+    <link rel="icon" href="/favicon.svg">
+    <script src="/local/js/vars.js"></script>
+    <script type="text/javascript" src="https://netdata.gate.seedno.de/dashboard.js"></script>
+    <script src="/local/js/options.js"></script>
+
+    <title>SnowLab.tech Stats</title>
+  </head>
+  <body>
+    <!-- Charts -->
+    <h2>Reverse Proxy</h2>
+    <div class="dashboard">
+      <!-- Net In -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.atom.seedno.de" data-netdata="system.net" data-dimensions="received" data-chart-library="easypiechart" data-title="Net Inbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#EE9911" role="application"></div>
+
+      <!-- CPU Usage -->
+      <div class="netdata-container-gauge" data-host="https://netdata.atom.seedno.de" data-netdata="system.cpu" data-chart-library="gauge" data-title="CPU" data-units="%" data-gauge-max-value="100" data-width="26%" data-after="-720" data-points="720" data-colors="#22AA99" role="application"></div>
+
+      <!-- Net Out -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.atom.seedno.de" data-netdata="system.net" data-dimensions="sent" data-chart-library="easypiechart" data-title="Net Outbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#DD4400" role="application"></div>
+    </div>
+
+    <h2>Main Webserver</h2>
+    <div class="dashboard">
+      <!-- Net In -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.gate.seedno.de" data-netdata="system.net" data-dimensions="received" data-chart-library="easypiechart" data-title="Net Inbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#EE9911" role="application"></div>
+
+      <!-- CPU Usage -->
+      <div class="netdata-container-gauge" data-host="https://netdata.gate.seedno.de" data-netdata="system.cpu" data-chart-library="gauge" data-title="CPU" data-units="%" data-gauge-max-value="100" data-width="26%" data-after="-720" data-points="720" data-colors="#22AA99" role="application"></div>
+
+      <!-- Net Out -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.gate.seedno.de" data-netdata="system.net" data-dimensions="sent" data-chart-library="easypiechart" data-title="Net Outbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#DD4400" role="application"></div>
+    </div>
+  
+    <h2>Game Servers</h2>
+    <div class="dashboard">
+      <!-- Net In -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.storage.seedno.de" data-netdata="system.net" data-dimensions="received" data-chart-library="easypiechart" data-title="Net Inbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#EE9911" role="application"></div>
+
+      <!-- CPU Usage -->
+      <div class="netdata-container-gauge" data-host="https://netdata.storage.seedno.de" data-netdata="system.cpu" data-chart-library="gauge" data-title="CPU" data-units="%" data-gauge-max-value="100" data-width="26%" data-after="-720" data-points="720" data-colors="#22AA99" role="application"></div>
+
+      <!-- Net Out -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.storage.seedno.de" data-netdata="system.net" data-dimensions="sent" data-chart-library="easypiechart" data-title="Net Outbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#DD4400" role="application"></div>
+    </div>
+
+    <h2>Ansible Tower</h2>
+    <div class="dashboard">
+      <!-- Net In -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.wall.seedno.de" data-netdata="system.net" data-dimensions="received" data-chart-library="easypiechart" data-title="Net Inbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#EE9911" role="application"></div>
+
+      <!-- CPU Usage -->
+      <div class="netdata-container-gauge" data-host="https://netdata.wall.seedno.de" data-netdata="system.cpu" data-chart-library="gauge" data-title="CPU" data-units="%" data-gauge-max-value="100" data-width="26%" data-after="-720" data-points="720" data-colors="#22AA99" role="application"></div>
+
+      <!-- Net Out -->
+      <div class="netdata-container-easypiechart" data-host="https://netdata.wall.seedno.de" data-netdata="system.net" data-dimensions="sent" data-chart-library="easypiechart" data-title="Net Outbound" data-width="17%" data-before="0" data-after="-540" data-points="540" data-common-units="system.net.mainhead" data-colors="#DD4400" role="application"></div>
+    </div>
+  </body>
+</html>
