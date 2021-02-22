@@ -30,7 +30,7 @@ var netdataTheme = 'slate'; // this is dark
 // on charts without a 'data-host', this one will be used.
 // the default is the server that dashboard.js is downloaded from.
 
-var netdataServer = 'http://192.168.4.93:19999';
+var netdataServer = 'https://netdataproxy.snowlab.tech';
 </script>
 
 <!--
@@ -45,8 +45,8 @@ var netdataServer = 'http://192.168.4.93:19999';
     The second assumes you host this file on /usr/share/netdata/web
     and that you have chown it to be owned by netdata:netdata
 -->
-<!-- <script type="text/javascript" src="http://192.168.4.93:19999/dashboard.js"></script> -->
-<script type="text/javascript" src="dashboard.js"></script>
+<script type="text/javascript" src="https://netdataproxy.snowlab.tech/dashboard.js"></script>
+<!-- <script type="text/javascript" src="dashboard.js"></script> -->
 
 <script>
 // Set options for TV operation
@@ -89,7 +89,7 @@ setTimeout(function(){
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
             <br/>
             <div data-netdata="system.cpu"
-                    data-host="http://192.168.4.111:19999"
+                    data-host="https://netdatawebserver.snowlab.tech"
                     data-title="Proxy CPU Usage"
                     data-chart-library="dygraph"
                     data-width="49%"
@@ -115,7 +115,7 @@ setTimeout(function(){
         </div>
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
             <div data-netdata="system.io"
-                    data-host="http://192.168.4.111:19999"
+                    data-host="https://netdatawebserver.snowlab.tech"
                     data-common-max="io"
                     data-common-min="io"
                     data-title="I/O on registry.my-netdata.io"
@@ -143,7 +143,7 @@ setTimeout(function(){
         </div>
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
             <div data-netdata="system.net"
-                    data-host="http://192.168.4.111:19999"
+                    data-host="https://netdatawebserver.snowlab.tech"
                     data-common-max="traffic"
                     data-common-min="traffic"
                     data-title="Network traffic on registry.my-netdata.io"
@@ -173,7 +173,7 @@ setTimeout(function(){
               SnowLab Webserver
                 <br/>
                 <div data-netdata="netdata.requests"
-                        data-host="http://192.168.4.111:19999"
+                        data-host="https://netdatawebserver.snowlab.tech"
                         data-common-max="netdata-requests"
                         data-decimal-digits="0"
                         data-title="Chart Refreshes/s"
@@ -184,7 +184,7 @@ setTimeout(function(){
                         data-points="300"
                         ></div>
                 <div data-netdata="netdata.clients"
-                        data-host="http://192.168.4.111:19999"
+                        data-host="https://netdatawebserver.snowlab.tech"
                         data-common-max="netdata-clients"
                         data-decimal-digits="0"
                         data-title="Sockets"
@@ -199,7 +199,7 @@ setTimeout(function(){
                         data-dimensions="in"
                         data-common-max="netdata-net-in"
                         data-decimal-digits="0"
-                        data-host="http://192.168.4.111:19999"
+                        data-host="https://netdatawebserver.snowlab.tech"
                         data-title="Requests Traffic"
                         data-chart-library="easypiechart"
                         data-width="15%"
@@ -211,7 +211,7 @@ setTimeout(function(){
                         data-dimensions="out"
                         data-common-max="netdata-net-out"
                         data-decimal-digits="0"
-                        data-host="http://192.168.4.111:19999"
+                        data-host="https://netdatawebserver.snowlab.tech"
                         data-title="Chart Data Traffic"
                         data-chart-library="easypiechart"
                         data-width="15%"
