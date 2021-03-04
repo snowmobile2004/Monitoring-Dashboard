@@ -1,0 +1,1 @@
+[![Cloudflare Cache Purge](https://github.com/snowmobile2004/Monitoring-Dashboard/actions/workflows/purgecache.yml/badge.svg?branch=master)](https://github.com/snowmobile2004/Monitoring-Dashboard/actions/workflows/purgecache.yml)
